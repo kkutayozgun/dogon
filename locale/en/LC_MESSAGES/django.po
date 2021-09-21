@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-19 19:35+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\dogon\settings\base.py:115
+msgid "Türkçe"
+msgstr "Turkish"
+
+#: .\dogon\settings\base.py:116
+msgid "İngilizce"
+msgstr "English"
+
+#: .\templates\applications\application_detail.html:54
+msgid "Alt Kategoriler"
+msgstr "Sub Categories"
+
+#: .\templates\applications\application_detail.html:65
+msgid "Tüm Uygulamalarımızı Keşfedin"
+msgstr "Explore All Our Apps"
+
+#: .\templates\applications\application_detail.html:68
+msgid ""
+"Sektör ve müşterilerimizin talepleri özelinde doğa dostu teknoloji "
+"çözümlerimiz ile dünyanın dört bir yanına katma değer sağlıyoruz!"
+msgstr ""
+
+#: .\templates\applications\application_detail.html:74
+msgid "Keşfet"
+msgstr "Discover"
+
+#: .\templates\applications\application_detail.html:81
+msgid "Broşürü İndir"
+msgstr "Download Booklet"
+
+#: .\templates\applications\components\category-list-item.html:16
+#: .\templates\home\components\application-areas.html:33
+#: .\templates\home\components\offer-area.html:29
+#: .\templates\home\components\prototype-area.html:32
+#: .\templates\home\components\prototype-area.html:44
+msgid "Detaylı bilgi"
+msgstr "Detailed Information"
+
+#: .\templates\blog\blog_content.html:50
+msgid "Öne Çıkanlar"
+msgstr "Highlights"
+
+#: .\templates\blog\components\blog-categories.html:3
+msgid "Kategoriler"
+msgstr "Categories"
+
+#: .\templates\blog\components\blog-list-item.html:27
+msgid "Devamını oku"
+msgstr "Read more"
+
+#: .\templates\components\footer.html:13
+msgid "Bize Ulaşın"
+msgstr "Contact us"
+
+#: .\templates\components\footer.html:34
+msgid "Site Haritası"
+msgstr "Site Map"
+
+#: .\templates\components\footer.html:38
+msgid "Ana Sayfa"
+msgstr "Home"
+
+#: .\templates\components\footer.html:39
+#: .\templates\components\mobile-sidebar.html:9
+#: .\templates\components\navbar.html:29
+msgid "Hakkımızda"
+msgstr "About"
+
+#: .\templates\components\footer.html:40
+#: .\templates\components\mobile-sidebar.html:10
+#: .\templates\components\navbar.html:32
+msgid "Uygulamalar"
+msgstr "Applications"
+
+#: .\templates\components\footer.html:41
+#: .\templates\components\mobile-sidebar.html:14
+#: .\templates\components\navbar.html:44
+msgid "Kalite"
+msgstr "Quality"
+
+#: .\templates\components\footer.html:42
+#: .\templates\components\mobile-sidebar.html:15
+#: .\templates\components\navbar.html:47
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\components\footer.html:46
+#: .\templates\components\mobile-sidebar.html:16
+#: .\templates\components\navbar.html:50
+msgid "İletişim"
+msgstr "Contact"
+
+#: .\templates\components\footer.html:47
+msgid "KVKK"
+msgstr ""
+
+#: .\templates\components\footer.html:56
+msgid "Haritada DOGON"
+msgstr "DOGON on the map"
+
+#: .\templates\components\meet-area.html:12
+msgid "Size nasıl yardımcı olabiliriz?"
+msgstr "How can we help you?"
+
+#: .\templates\components\meet-area.html:14
+msgid ""
+"Dogon çözümleri ve hizmetleri hakkında merak ettikleriniz, tavsiye veya "
+"şikayetleriniz için bize ulaşabilirsiniz. "
+msgstr "You can contact us for your questions, advice or complaints about Dogon solutions and services."
+
+#: .\templates\components\meet-area.html:15
+msgid "Size yardımcı olmaktan mutluluk duyarız."
+msgstr "We will be happy to assist you"
+
+#: .\templates\components\meet-area.html:18
+msgid "Bize ulaşın"
+msgstr "Contact us"
+
+#: .\templates\components\mobile-sidebar.html:8
+#: .\templates\components\navbar.html:26
+msgid "Anasayfa"
+msgstr "Home"
+
+#: .\templates\contact\components\contact-form.html:11
+msgid "Bize ulaşın, sizi arayalım"
+msgstr "Contact us, we will call you"
+
+#: .\templates\contact\components\contact-form.html:14
+msgid ""
+"Talepleriniz doğrultusunda geliştirdiğimiz veya geliştireceğimiz çözümler, "
+"üretim ve daha fazlası hakkında bilgi almak için yan taraftaki formu "
+"doldurabilir veya iletişim kanallarımız üzerinden bize ulaşabilirsiniz."
+msgstr ""
+
+#: .\templates\contact\components\contact-form.html:29
+msgid "Adınız/Soyadınız"
+msgstr "Name/Surname"
+
+#: .\templates\contact\components\contact-form.html:32
+msgid "Telefon Numaranız"
+msgstr "Your Phone Number"
+
+#: .\templates\contact\components\contact-form.html:34
+msgid "Mesajınız"
+msgstr "Your Message"
+
+#: .\templates\contact\components\contact-form.html:36
+msgid "GÖNDER"
+msgstr "SEND"
+
+#: .\templates\contact\components\contact-info.html:19
+msgid "Telefon"
+msgstr "Phone"
+
+#: .\templates\contact\components\contact-info.html:30
+msgid "E-mail"
+msgstr "Email"
+
+#: .\templates\contact\components\contact-info.html:41
+msgid "Merkez Ofis"
+msgstr "Center Ofis"
+
+#: .\templates\contact\components\contact-info.html:51
+msgid "Fabrika"
+msgstr "Factory"
+
+#: .\templates\home\components\application-areas.html:12
+msgid "Uygulama Alanları"
+msgstr "Application Areas"
+
+#: .\templates\home\components\blog-area.html:13
+msgid "DOGON Blog"
+msgstr ""
+
+#: .\templates\home\components\blog-area.html:41
+msgid "Okuyun"
+msgstr "Read"
+
+#: .\templates\home\components\carousel-item.html:145
+msgid "Detaylı Bilgi"
+msgstr "Detailed Information"
+
+#: .\templates\home\components\offer-area.html:18
+msgid "Hayal gücüne yolculuk başlıyor!"
+msgstr "The journey to the imagination begins!"
+
+#: .\templates\home\components\offer-area.html:21
+msgid ""
+"DOGON, tasarım ve prototiplendirme sürecinde sürdürülebilir başarı için "
+"inovasyonun ve Ar-Ge’nin önemine inanmaktadır. Havacılık, otomotiv, medikal "
+"ve birçok uygulama alanında müşterilerinin beklentilerinin ötesinde ve "
+"uluslararası standartlarda çözümler sunmaktadır."
+msgstr ""
+
+#: .\templates\home\components\prototype-area.html:11
+msgid "Uçtan uca prototip ve dizayn çözümleri"
+msgstr "End-to-end prototype and design solutions"
+
+#: .\templates\home\components\prototype-area.html:13
+msgid ""
+"DOGON, kuruluşundan bugüne yerli üretimi ve ihracatı arttırıp paydaşlarına "
+"ve müşterilerine yerli üretimin avantajlarını sunmakta, yerli üretimin "
+"piyasada kabul görmesini sağlamaktadır. Bu sayede ülke ekonomisi için katma "
+"değer sağlamaktadır."
+msgstr ""
+
+#: .\templates\home\components\prototype-area.html:30
+msgid "Teknoloji ve Ar-Ge "
+msgstr "Technology and R&D"
+
+#: .\templates\home\components\prototype-area.html:42
+msgid "Tasarım Yolculuğu "
+msgstr "Design Journey"

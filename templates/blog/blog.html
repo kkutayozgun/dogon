@@ -1,0 +1,64 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+
+{% block custom-css %}
+    <style>
+        .breadcrumb-area {
+            background-image: url("{{blog.banner_image.url}}")
+        }
+    </style>
+{% endblock custom-css %}
+
+{% block meta-settings %}
+    {% if selectedcategory %}
+    {% include 'components/meta.html' with obj=selectedcategory %}
+    {% else %}
+    {% include 'components/meta.html' with obj=blog %}
+    {% endif %}
+{% endblock meta-settings %}
+    
+{% block content %}
+    
+    {% if selectedcategory %}
+    {% include 'components/banner-area.html' with banner_title=selectedcategory.banner_title %}
+    {% else %}
+    {% include 'components/banner-area.html' with banner_title=blog.banner_title %}
+    {% endif %}
+        
+
+    <!--================================
+            START BLOG AREA
+    =================================-->
+    <section class="blog-area responsive-content area-padding text-left">
+        <div class="blog-fluid">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="row service-box blog-box mb-50px">
+                            
+                            {% for blogpost in blogposts %}
+                                {% include 'blog/components/blog-list-item.html' %}
+                            {% endfor %}
+                            
+                        </div><!-- end row -->
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="side-bar">
+                            {% include 'blog/components/blog-categories.html' %}
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                
+            </div><!-- container -->
+        </div><!-- end blog-fluid -->
+    </section><!-- end blog-area -->
+    <!--================================
+            END BLOG AREA
+    =================================-->
+
+{% endblock content %}

@@ -1,0 +1,104 @@
+{% load static %}
+{% load i18n %}
+<!-- ================================
+            START MENU AREA
+    ================================= -->
+    <section class="menu-area menu-area-3 ">
+        <div class="top-menu-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 menu-full-box theme-bg-light no-padding-lr">
+                        <div class="menu-full-width">
+                            <div class="logo-box">
+                                <div class="site-open">
+                                    <span class="open__only"></span>
+                                    <span class="open__only"></span>
+                                    <span class="open__only"></span>
+                                </div><!-- end site-open -->
+                                <div class="logo">
+                                    <a href="{% url 'home' %}" title="Avivon"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                                </div><!-- end logo -->
+                            </div><!-- end logo-box -->
+                            <div class="main-menu">
+                                <nav class="menu__wrapper">
+                                    <ul class="dropdown-main">
+                                        <li>
+                                            <a href="{% url 'home' %}">{% trans 'Anasayfa' %}</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'about' %}">{% trans 'Hakkımızda' %}</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'applications' %}">{% trans 'Uygulamalar' %}</a>
+                                            <div class="main__dropdown-menu">
+                                                <ul>
+                                                    
+                                                    {% for category in appcategories %}
+                                                    <li><a href="{% url 'application_category_list' slug=category.slug %}">{{category.title}}</a></li>
+                                                    {% endfor %}
+                                                        
+                                                </ul>
+                                            </div><!-- end main__dropdown-menu -->
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'quality' %}">{% trans 'Kalite' %}</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'blog' %}">{% trans 'Blog' %}</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'contact' %}">{% trans 'İletişim' %}</a>
+                                        </li>
+                                    </ul>
+                                </nav><!-- end menu__wrapper -->
+                                <div class="logo-right-button">
+                                    <div class="lang-dropdown">
+                                        <form action="{% url 'set_language' %}" method="post" id="setLanguageForm">{% csrf_token %}
+                                            <input name="next" type="hidden" value="{{ redirect_to }}">
+                                            <select name="language" hidden id="language_field">
+                                            {% get_current_language as LANGUAGE_CODE %}
+                                            {% get_available_languages as LANGUAGES %}
+                                            {% get_language_info_list for LANGUAGES as languages %}
+                                            {% get_language_info for LANGUAGE_CODE as lang %}
+                                            {% for language in languages %}
+                                                    <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                                        {{ language.name_local }} ({{ language.code }})
+                                                    </option>
+                                                {% endfor %}
+                                            </select>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        {{lang.name_local}}
+                                                        <i class="fas fa-caret-down"></i>
+                                                    </a>
+                                                    <div class="lang-drop-item">
+                                                        {% for language in languages %}
+                                                        <a href="#" onClick="setLanguage('{{ language.code }}')">
+                                                            {{ language.name_local }}
+                                                        </a>
+                                                        {% endfor %}
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div><!-- end lang-dropdown -->
+                                    <div class="contact-para">
+                                        <ul class="social__links">
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div><!-- end contact-para -->
+                                </div><!-- end logo-right-button -->
+                            </div><!-- end main-menu -->
+                        </div><!-- end menu-full-width -->
+                    </div><!-- end col-log-12 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end top-menu-area -->
+    </section><!-- end menu-area -->
+    <!-- ================================
+                END MENU AREA
+    ================================= -->

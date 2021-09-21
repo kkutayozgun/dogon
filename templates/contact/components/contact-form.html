@@ -1,0 +1,54 @@
+{% load i18n %}
+<!--================================
+         START CONTACT AREA
+=================================-->
+<section class="contact-area responsive-content area-padding">
+    <div class="contact-fluid">
+        <div class="container contact-info avivon-pb">
+            <div class="row">
+                <div class="col-md-4 primary-padding">
+                    <div class="avivon-heading">
+                        <h2 class="avivon__title">{% trans 'Bize ulaşın, sizi arayalım' %}</h2>
+                        <p class="avivon__desc contact__desc mt-50px">
+                            
+                            {% blocktrans trimmed %}
+                            Talepleriniz doğrultusunda geliştirdiğimiz veya geliştireceğimiz çözümler, üretim ve daha
+                            fazlası hakkında bilgi almak için yan taraftaki formu doldurabilir veya iletişim
+                            kanallarımız üzerinden bize ulaşabilirsiniz.
+                            {% endblocktrans %}
+                            
+                        </p>
+                    </div>
+                    <!-- end avivon-heading -->
+                </div>
+                <!-- end col-md-4 -->
+                <div class="col-md-8">
+                    <div class="comment__form contact__form">
+                        <form action="#">
+                            <div class="input__box-input">
+                                <input type="text" placeholder="{% trans 'Adınız/Soyadınız' %}" />
+                            </div>
+                            <div class="input__box-input email-box">
+                                <input type="email" placeholder="{% trans 'Telefon Numaranız' %}" />
+                            </div>
+                            <textarea name="message" placeholder="{% trans 'Mesajınız' %}"></textarea>
+                            <button class="submit__btn-btn">
+                                {% trans 'GÖNDER' %}
+                                <span class="fontello icon-angle-double-right"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- end comment__form -->
+                </div>
+                <!-- end col-md-8 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- end contact-fluid -->
+</section>
+<!-- end contact-area -->
+<!--================================
+      END CONTACT AREA
+=================================-->

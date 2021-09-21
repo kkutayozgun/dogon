@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block custom-css %}
+    <style>
+        .breadcrumb-area {
+            background-image: url("{{contact.banner_image.url}}")
+        }
+    </style>
+{% endblock custom-css %}
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=contact %}
+{% endblock meta-settings %}
+    
+    
+{% block content %}
+
+    {% include 'components/banner-area.html' with banner_title=contact.banner_title %}
+
+    {% include 'contact/components/contact-info.html' %}
+    
+    {% include 'contact/components/contact-form.html' %}
+
+
+<!--========= start google map ===========-->
+    <div id="contactMap" class="mt-60px addressMap"></div>
+<!--========= end google map ===========-->
+
+
+{% endblock content %}
+    
+
+
+    

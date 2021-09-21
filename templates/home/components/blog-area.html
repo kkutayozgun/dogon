@@ -1,0 +1,55 @@
+{% load static %}
+{% load i18n %}
+
+<!--================================
+       START BLOG AREA
+=================================-->
+<section class="blog-area responsive-content area-padding theme-bg-gray">
+    <div class="blog-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 primary-padding-2 text-center">
+                    <div class="avivon-heading">
+                        <h2 class="avivon__title">{% trans 'DOGON Blog' %}</h2>
+                    </div><!-- end avivon-heading -->
+                </div><!-- end col-md-12 -->
+            </div><!-- end row -->
+
+            <div class="row service-box blog-box text-left">
+                {% for post in blogs %}
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="shared-service">
+                        <div class="shared__img">
+                            <img src="{{post.image.url}}" alt="{{blog.title}}">
+               
+                        </div><!-- end shared-__img -->
+                        <div class="shared-content">
+                            <div class="service__title mb-30px">
+                                <h3 class="service__title-title">
+                                    <a href="{% url 'blog_content' slug=post.slug %}">
+                                        {{post.title}}
+                                    </a>
+                                </h3>
+                            </div><!-- end service__title -->
+                            <div class="service__desc mb-35px">
+                                <p class="service__desc-desc">
+                                    {{post.body|safe|truncatewords_html:20}}
+                                </p>
+                            </div><!-- end service__desc -->
+                            <div class="service__more">
+                                <a href="{% url 'blog_content' slug=post.slug %}" class="service__more-btn">
+                                    {% trans 'Okuyun' %} <span class="fontello icon-angle-double-right"></span>
+                                </a>
+                            </div><!-- end service__desc -->
+                        </div><!-- end shared-content -->
+                    </div><!-- end shared-service -->
+                </div><!-- end col-md-4 -->
+                {% endfor %}
+                
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end blog-fluid -->
+</section><!-- end blog-area -->
+<!--================================
+          END BLOG AREA
+=================================-->

@@ -1,0 +1,52 @@
+{% extends 'base/base.html' %}
+
+
+{% block custom-css %}
+    <style>
+        .breadcrumb-area {
+            background-image: url("{{kvkk.banner_image.url}}")
+        }
+    </style>
+{% endblock custom-css %}
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=kvkk %}
+{% endblock meta-settings %}
+    
+    
+{% block content %}
+    
+{% include 'components/banner-area.html' with banner_title=kvkk.banner_title %}
+
+<!--================================
+       START CHOOSE AREA
+=================================-->
+<section class="choose-area responsive-content choose--area area-padding">
+    <div class="choose-fluid">
+        <div class="container">
+            <div class="row ">
+                <div class="avivon-heading mission-heading">
+                    <h2 class="avivon__title">
+                        {{kvkk.banner_title}}
+                    </h2>
+                </div><!-- end avivon-heading -->
+                <div class="choose-same mission-same">
+                    
+                    <div class="choose__desc">
+                        <p>
+                            {{kvkk.body|safe}}
+                        </p>
+                    </div><!-- end choose__desc -->
+                </div><!-- end choose-same -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end choose-fluid -->
+</section><!-- end choose-area -->
+<!--================================
+       END CHOOSE AREA
+=================================-->
+
+{% include 'components/meet-area.html' %}
+
+
+{% endblock content %}

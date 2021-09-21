@@ -1,0 +1,98 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+
+{% block custom-css %}
+    <style>
+        .breadcrumb-area {
+            background-image: url("{{application.banner_image.url}}")
+        }
+        .side-bar .help__bg {
+            background-image: none;
+        }
+        .btn-kesfet {
+            color: white;
+        }
+    </style>
+{% endblock custom-css %}
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=subcategory %}
+{% endblock meta-settings %}
+
+{% block content %}
+    
+{% include 'components/banner-area.html' with banner_title='Uygulama / ' banner_subtitle=subcategory.banner_title %}
+
+<!--================================
+         START SERVICE AREA
+=================================-->
+<section class="single-area responsive-content area-padding">
+    <div class="service-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="single-content">
+                        <div class="avivon-heading">
+                            <h2 class="avivon__title">{{subcategory.title}}</h2>
+                        </div><!-- end avivon-heading -->
+                        <div class="single__img mb-50px">
+                            {% if subcategory.image %}
+                            <img src="{{subcategory.image.url}}" alt="{{subcategory.title}}" class="img-single">
+                            {% endif %}
+                        </div><!-- end single__img -->
+                        <div class="avivon-heading">
+                           <p class="avivon__desc singlecases__desc mt-30px mb-70px">
+                                {{subcategory.body|safe}}
+                            </p>
+                        </div><!-- end avivon-heading -->
+                    
+                    </div><!-- end single-content -->
+                </div><!-- end col-md-8 -->
+                <div class="col-md-4">
+                    <div class="side-bar">
+                        <div class="side__shared case__shared mb-30px">
+                            <h3 class="side__bar-title">{% trans 'Alt Kategoriler' %}</h3>
+                            <ul class="side__bar-links">
+                                {% for item in subcategories %}
+                                <li>
+                                    <a href="{% url 'application_detail' slug=item.slug %}">{{item.title}}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div><!-- end side__shared -->
+                        <div class="side__shared help__shared help__bg mb-30px">
+                            <div class="avivon__help-center">
+                                <h3 class="side__bar-title__title">{% trans 'Tüm Uygulamalarımızı Keşfedin' %}</h3>
+                                <p class="avivon__help-desc__desc">
+                                    
+                                    {% blocktrans trimmed %}
+                                        Sektör ve müşterilerimizin talepleri özelinde doğa dostu teknoloji çözümlerimiz ile 
+                                        dünyanın dört bir yanına katma değer sağlıyoruz!
+                                    {% endblocktrans %}
+                                    
+                                </p>
+                                <a href="{% url 'applications' %}" class="btn-kesfet">{% trans 'Keşfet' %}</a>
+                            </div><!-- end avivon__help-center -->
+                        </div><!-- end side__shared -->
+                        <div class="download__btn">
+                            
+                            {% if subcategory.pdf_file %}
+                            <a href="{{subcategory.pdf_file.url}}" class="download__btn-btn" target="_blank">
+                                {% trans 'Broşürü İndir' %} <span class="fontello icon-angle-double-right"></span>
+                            </a>
+                            {% endif %}
+                                
+                        </div><!-- end download__btn -->
+                    </div><!-- end side-bar -->
+                </div><!-- end col-md-4 -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end service-fluid -->
+</section><!-- end service-area -->
+<!--================================
+           END SERVICE AREA
+=================================-->
+
+{% include 'components/meet-area.html' %}
+
+{% endblock content %}

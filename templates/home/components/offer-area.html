@@ -1,0 +1,48 @@
+{% load static %} 
+{% load i18n %}
+
+<!--================================
+      START OFFER AREA
+=================================-->
+<section class="offer-area responsive-content inspire-area area-padding">
+    <div class="offer-fluid">
+        <div class="container">
+            <div class="row offer-content">
+                <div class="inspire-list-box">
+                    <div class="inspire-img mb-30px"></div>
+                </div>
+                <div class="offer-list-box">
+                    <div class="offer-list">
+                        <div class="avivon-heading">
+                            <h2 class="avivon__title inspire-title">
+                                {% blocktrans trimmed %} Hayal gücüne yolculuk başlıyor! {% endblocktrans %}
+                            </h2>
+                            <p class="avivon__desc mt-45px mb-40px">
+                                {% blocktrans trimmed %} 
+                                DOGON, tasarım ve prototiplendirme sürecinde sürdürülebilir başarı için
+                                inovasyonun ve Ar-Ge’nin önemine inanmaktadır. Havacılık, otomotiv, medikal ve birçok
+                                uygulama alanında müşterilerinin beklentilerinin ötesinde ve uluslararası standartlarda
+                                çözümler sunmaktadır. 
+                                {% endblocktrans %}
+                            </p>
+                            <a href="{% url 'about' %}" class="get__btn">
+                                {% trans 'Detaylı bilgi' %} 
+                                <span class="fontello icon-angle-double-right"></span>
+                            </a>
+                        </div>
+                        <!-- end avivon-heading -->
+                    </div>
+                    <!-- end offer-list -->
+                </div>
+                <!-- end offer-list-box -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- end offer-fluid -->
+</section>
+<!-- end offer-area -->
+<!--================================
+         END OFFER AREA
+ =================================-->

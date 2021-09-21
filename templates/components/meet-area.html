@@ -1,0 +1,29 @@
+{% load i18n %}
+
+<!--================================
+            START MEET AREA
+=================================-->
+<section class="meet-area area-padding theme-bg-main">
+    <div class="meet-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="meet-heading text-center">
+                        <h2 class="avivon__title">{% trans 'Size nasıl yardımcı olabiliriz?' %}</h2>
+                        <p class="avivon__desc">
+                            {% trans 'Dogon çözümleri ve hizmetleri hakkında merak ettikleriniz, tavsiye veya şikayetleriniz için bize ulaşabilirsiniz. ' %} <br>
+                            {% trans 'Size yardımcı olmaktan mutluluk duyarız.' %}
+                        </p>
+                        <a href="{% url 'contact' %}" class="meet__btn">
+                            {% trans 'Bize ulaşın' %}
+                            <span class="fontello icon-angle-double-right"></span>
+                        </a>
+                    </div><!-- end meet-heading -->
+                </div><!-- end col-md-12 -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end meet-fluid -->
+</section><!-- end meet-area -->
+<!--================================
+           END MEET AREA
+=================================-->

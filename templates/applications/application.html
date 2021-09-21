@@ -1,0 +1,65 @@
+{% extends 'base/base.html' %}
+
+{% block custom-css %}
+    <style>
+        .breadcrumb-area {
+            background-image: url("{{application.banner_image.url}}")
+        }
+    </style>
+{% endblock custom-css %}
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=application %}
+{% endblock meta-settings %}
+    
+    
+
+{% block content %}
+    
+<!--================================
+          START BANNER AREA
+=================================-->
+<section class="trusted-area breadcrumb-area text-center">
+    <div class="trusted-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="trusted-content">
+                        <div class="trusted__title">
+                            <h2 class="trusted__title-title">{{application.banner_title}}</h2>
+                        </div><!-- end trusted__title -->
+                    </div><!-- end trusted-content -->
+                </div><!-- end col-md-12 -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end trusted-fluid -->
+</section><!-- end trusted-area -->
+<!--================================
+          END BANNER AREA
+=================================-->
+
+<!--================================
+          START RECENT AREA
+=================================-->
+<section class="ofc-caoursel-area responsive-content recent-area cases-area area-padding case-page-1">
+    <div class="ofc-caoursel-fluid">
+        <div class="container">
+            <div class="row mb-30px masonary-layout">
+                
+                {% for item in subcategories %}
+                    {% include 'applications/components/category-list-item.html' %}
+                {% endfor %}
+                    
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end ofc-caoursel-fluid -->
+</section><!-- end ofc-caoursel-area -->
+<!--================================
+          END RECENT AREA
+=================================-->
+
+{% include 'components/meet-area.html' %}
+
+
+{% endblock content %}
+    

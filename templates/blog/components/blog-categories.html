@@ -1,0 +1,15 @@
+{% load i18n %}
+<div class="side__shared post__shared mb-30px">
+    <h3 class="side__bar-title">{% trans 'Kategoriler' %}</h3>
+    <ul class="side__bar-links">
+        
+        {% for blogcategory in blogcategories %}
+        <li>
+            <a href="{% url 'blog_category_list' slug=blogcategory.slug %}">{{blogcategory.title}}</a>
+            <span class="fontello icon-angle-double-right"></span>
+        </li>
+        
+        {% endfor %}
+           
+    </ul>
+</div><!-- end side__shared -->

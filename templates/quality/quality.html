@@ -1,0 +1,62 @@
+{% extends 'base/base.html' %}
+
+
+{% block custom-css %}
+    <style>
+        .breadcrumb-area {
+            background-image: url("{{quality.banner_image.url}}")
+        }
+    </style>
+{% endblock custom-css %}
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=quality %}
+{% endblock meta-settings %}
+    
+    
+{% block content %}
+    
+{% include 'components/banner-area.html' with banner_title=quality.banner_title %}
+
+<!--================================
+       START CHOOSE AREA
+=================================-->
+<section class="choose-area responsive-content choose--area area-padding">
+    <div class="choose-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-60px choose-box">
+                    <div class="choose-popup">
+                        <img src="{{quality.image.url}}" alt="{{quality.title}}">
+                    </div><!-- end choose-popup -->
+                </div><!-- end col-md-12 -->
+            </div><!-- end row -->
+            <div class="row choose-content">
+                <div class="">
+                    <div class="avivon-heading mission-heading">
+                        <h2 class="avivon__title">
+                            {{quality.title}}
+                        </h2>
+                    </div><!-- end avivon-heading -->
+                </div><!-- end col-md-4 -->
+                <div class="">
+                    <div class="choose-same mission-same">
+                        <div class="choose__desc">
+                            <p>
+                                {{quality.body|safe}}
+                            </p>
+                        </div><!-- end choose__desc -->
+                    </div><!-- end choose-same -->
+                </div><!-- end col-md-4 -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end choose-fluid -->
+</section><!-- end choose-area -->
+<!--================================
+       END CHOOSE AREA
+=================================-->
+
+{% include 'components/meet-area.html' %}
+
+
+{% endblock content %}

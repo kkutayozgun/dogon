@@ -1,0 +1,75 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+
+{% block custom-css %}
+    <style>
+        .breadcrumb-area {
+            background-image: url("{{blog.banner_image.url}}")
+        }
+    </style>
+{% endblock custom-css %}
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=blogpost %}
+{% endblock meta-settings %}
+    
+
+{% block content %}
+    
+{% include 'components/banner-area.html' with banner_title=blogpost.banner_title %}
+<!--================================
+             START SERVICE AREA
+=================================-->
+<section class="single-area area-padding">
+    <div class="service-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="single-content">
+                        <div class="single__img">
+                            <img src="{{blogpost.image.url}}" alt="service image" class="img-single">
+                            
+                        </div><!-- end single__img -->
+                        <div class="avivon-heading">
+                            <h2 class="avivon__title theme-afr">
+                                {{blogpost.title}}
+                            </h2>
+                            <p class="avivon__desc mb-30px">
+                                {{blogpost.body|safe}}
+                            </p>
+                            
+                        </div><!-- end avivon-heading -->
+                    
+                    </div><!-- end single-content -->
+                </div><!-- end col-md-8 -->
+                <div class="col-md-4">
+                    <div class="side-bar">
+                        {% include 'blog/components/blog-categories.html' %}
+
+                        <div class="side__shared details__widget post__shared mb-30px">
+                            <h3 class="side__bar-title">{% trans 'Öne Çıkanlar' %}</h3>
+
+                            
+                            {% for post in latestposts %}
+                            <div class="post-list theme-btb pb-20px mb-20px">
+                                <div class="post__img post__one" style="background-image: url('{{post.image.url}}')"></div><!-- end post__img -->
+                                <div class="post__body">
+                                    <p class="post__body-title">
+                                        <a href="{% url 'blog_content' slug=post.slug %}">{{post.title}}</a>
+                                    </p>
+                                </div><!-- end post__img-item -->
+                            </div><!-- end post-list -->
+                            {% endfor %}
+                                
+                        </div><!-- end side__shared -->
+                    
+                    </div><!-- end side-bar -->
+                </div><!-- end col-md-4 -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end service-fluid -->
+</section><!-- end service-area -->
+<!--================================
+        END SERVICE AREA
+=================================-->
+{% endblock content %}

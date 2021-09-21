@@ -1,0 +1,63 @@
+{% load i18n %}
+<!--================================
+          START THINK AREA
+=================================-->
+<section class="think-area responsive-content area-padding">
+    <div class="think-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="avivon-heading">
+                        <h2 class="avivon__title">{% trans 'Uçtan uca prototip ve dizayn çözümleri' %}</h2>
+                        <p class="avivon__desc mt-35px inspire-desc mb-30px">
+                            {% blocktrans trimmed %} 
+                            DOGON, kuruluşundan bugüne yerli üretimi ve ihracatı arttırıp paydaşlarına
+                            ve müşterilerine yerli üretimin avantajlarını sunmakta, yerli üretimin piyasada kabul
+                            görmesini sağlamaktadır. Bu sayede ülke ekonomisi için katma değer sağlamaktadır. 
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <!-- end avivon-heading -->
+                    <div class="think-img">
+                        <div class="think__bg"></div>
+                    </div>
+                    <!-- end think-img -->
+                </div>
+                <!-- end col-md-6 -->
+                <div class="col-md-6">
+                    <div class="think-column-box">
+                        <div class="think-boxed rpl-content">
+                            <h3 class="boxed__title">{% trans 'Teknoloji ve Ar-Ge ' %}</h3>
+                            <a href="{% url 'quality' %}" class="boxed__btn"
+                                >{% trans 'Detaylı bilgi' %}
+                                <span class="fontello icon-angle-double-right"></span>
+                            </a>
+                        </div>
+                        <!-- end think-boxed -->
+                        <div class="think-boxed boxed-bg rpl-content-2"></div>
+                        <!-- end think-boxed -->
+                        <div class="think-boxed rpl-content boxed-bg-2"></div>
+                        <!-- end think-boxed -->
+                        <div class="think-boxed rpl-content-2">
+                            <h3 class="boxed__title">{% trans 'Tasarım Yolculuğu ' %}</h3>
+                            <a href="{% url 'blog' %}" class="boxed__btn"
+                                >{% trans 'Detaylı bilgi' %}
+                                <span class="fontello icon-angle-double-right"></span>
+                            </a>
+                        </div>
+                        <!-- end think-boxed -->
+                    </div>
+                    <!-- end think-column -->
+                </div>
+                <!-- end col-md-6 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end think-fluid -->
+</section>
+<!-- end think-area -->
+<!--================================
+        END THINK AREA
+=================================-->

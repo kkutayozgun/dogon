@@ -1,0 +1,20 @@
+{% load i18n %}
+<div class="body-overlay"></div>
+<!-- end body-overlay -->
+<div class="offcanvas-menu">
+    <div class="menu__close"></div>
+    <!-- end menu__close -->
+    <ul class="off__menu">
+        <li><a href="{% url 'home' %}">{% trans 'Anasayfa' %}</a></li>
+        <li><a href="{% url 'about' %}">{% trans 'Hakkımızda' %}</a></li>
+        <li class="menu__title-only"><a href="{% url 'applications' %}">{% trans 'Uygulamalar' %} <i class="fas fa-angle-down"></i></a></li>
+        {% for category in appcategories %}
+        <li><a href="{% url 'application_category_list' slug=category.slug %}">{{category.title}}</a></li>
+        {% endfor %}
+        <li><a href="{% url 'quality' %}">{% trans 'Kalite' %}</a></li>
+        <li><a href="{% url 'blog' %}">{% trans 'Blog' %}</a></li>
+        <li><a href="{% url 'contact' %}">{% trans 'İletişim' %}</a></li>
+        
+    </ul>
+</div>
+<!-- end offcanvas-menu -->

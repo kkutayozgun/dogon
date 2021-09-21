@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-19 19:35+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\seotr\models.py:6
+msgid "Anahtar Kelime"
+msgstr ""
+
+#: .\seotr\models.py:9
+msgid "EN Anahtar Kelime"
+msgstr ""
+
+#: .\seotr\models.py:10
+msgid "EN Anahtar Kelimeler"
+msgstr ""
+
+#: .\seotr\models.py:17
+msgid "SEO Başlığı:"
+msgstr ""
+
+#: .\seotr\models.py:18
+msgid "Meta Açıklaması:"
+msgstr ""
+
+#: .\seotr\models.py:19
+msgid "Anahtar Kelimeler"
+msgstr ""
+
+#: .\seotr\models.py:28 .\seotr\models.py:29
+msgid "TR SEO Anasayfa"
+msgstr ""
+
+#: .\seotr\models.py:35
+msgid "Slider Başlığı (1.Satır):"
+msgstr ""
+
+#: .\seotr\models.py:36
+msgid "Slider Başlığı (2.Satır):"
+msgstr ""
+
+#: .\seotr\models.py:37
+msgid "Slider İçeriği:"
+msgstr ""
+
+#: .\seotr\models.py:38
+msgid "SSlider Yönlendirme Linki:"
+msgstr ""
+
+#: .\seotr\models.py:39
+msgid "Slider Görseli:"
+msgstr ""
+
+#: .\seotr\models.py:42
+msgid "TR Slider İçeriği"
+msgstr ""
+
+#: .\seotr\models.py:43
+msgid "TR Slider İçerikleri"
+msgstr ""
+
+#: .\seotr\models.py:49 .\seotr\models.py:81 .\seotr\models.py:94
+#: .\seotr\models.py:107 .\seotr\models.py:129 .\seotr\models.py:146
+#: .\seotr\models.py:161 .\seotr\models.py:172 .\seotr\models.py:191
+#: .\seotr\models.py:202
+msgid "Banner Başlık:"
+msgstr ""
+
+#: .\seotr\models.py:50 .\seotr\models.py:147 .\seotr\models.py:192
+#: .\seotr\models.py:203
+msgid "Banner Görseli:"
+msgstr ""
+
+#: .\seotr\models.py:52
+msgid "Açıklama Başlığı"
+msgstr ""
+
+#: .\seotr\models.py:53
+msgid "Açıklama İçeriği:"
+msgstr ""
+
+#: .\seotr\models.py:54
+msgid "Açıklama Görseli:"
+msgstr ""
+
+#: .\seotr\models.py:56
+msgid "Alt Açıklama Başlığı:"
+msgstr ""
+
+#: .\seotr\models.py:57
+msgid "Alt Açıklama İçeriği:"
+msgstr ""
+
+#: .\seotr\models.py:58
+msgid "Alt Açıklama Görseli:"
+msgstr ""
+
+#: .\seotr\models.py:61 .\seotr\models.py:62
+msgid "TR Hakkımızda Sayfası"
+msgstr ""
+
+#: .\seotr\models.py:68
+msgid "Şirket Adı:"
+msgstr ""
+
+#: .\seotr\models.py:69
+msgid "Resim:"
+msgstr ""
+
+#: .\seotr\models.py:70
+msgid "Link:"
+msgstr ""
+
+#: .\seotr\models.py:73
+msgid "Referans"
+msgstr ""
+
+#: .\seotr\models.py:74
+msgid "Referanslarımız"
+msgstr ""
+
+#: .\seotr\models.py:82 .\seotr\models.py:133
+msgid "Banner Resmi:"
+msgstr ""
+
+#: .\seotr\models.py:85 .\seotr\models.py:86
+msgid "TR Uygulamalar SEO"
+msgstr ""
+
+#: .\seotr\models.py:93 .\seotr\models.py:109
+msgid "Başlık:"
+msgstr ""
+
+#: .\seotr\models.py:95
+msgid "Banner Resim:"
+msgstr ""
+
+#: .\seotr\models.py:97 .\seotr\models.py:115 .\seotr\models.py:159
+#: .\seotr\models.py:174
+msgid "URL Uzantısı:"
+msgstr ""
+
+#: .\seotr\models.py:100
+msgid "TR Uygulama Kategori"
+msgstr ""
+
+#: .\seotr\models.py:101
+msgid "TR Uygulama Kategorileri"
+msgstr ""
+
+#: .\seotr\models.py:110
+msgid "Açıklama:"
+msgstr ""
+
+#: .\seotr\models.py:111
+msgid "Kapak Resmi:"
+msgstr ""
+
+#: .\seotr\models.py:116 .\seotr\models.py:135
+msgid "İçerik Resmi:"
+msgstr ""
+
+#: .\seotr\models.py:118
+msgid "Broşür Dosyası"
+msgstr ""
+
+#: .\seotr\models.py:121
+msgid "TR Uygulama Alt Kategorisi"
+msgstr ""
+
+#: .\seotr\models.py:122
+msgid "TR Uygulama Alt Kategorileri"
+msgstr ""
+
+#: .\seotr\models.py:131
+msgid "İçerik Başlığı"
+msgstr ""
+
+#: .\seotr\models.py:132
+msgid "Kalite İçeriği:"
+msgstr ""
+
+#: .\seotr\models.py:138 .\seotr\models.py:139
+msgid "TR Kalite Sayfası"
+msgstr ""
+
+#: .\seotr\models.py:150 .\seotr\models.py:151
+msgid "TR Blog Sayfası SEO"
+msgstr ""
+
+#: .\seotr\models.py:158
+msgid "Blog Kategori:"
+msgstr ""
+
+#: .\seotr\models.py:164
+msgid "TR Blog Kategori"
+msgstr ""
+
+#: .\seotr\models.py:165
+msgid "TR Blog Kategoriler"
+msgstr ""
+
+#: .\seotr\models.py:171
+msgid "Blog Kategori"
+msgstr ""
+
+#: .\seotr\models.py:173
+msgid "İçerik Başlık:"
+msgstr ""
+
+#: .\seotr\models.py:176
+msgid "Blog İçeriği:"
+msgstr ""
+
+#: .\seotr\models.py:177
+msgid "Blog Görseli:"
+msgstr ""
+
+#: .\seotr\models.py:179
+msgid "Eklenme Zamanı"
+msgstr ""
+
+#: .\seotr\models.py:180
+msgid "Güncellenme Zamanı"
+msgstr ""
+
+#: .\seotr\models.py:183
+msgid "TR Blog İçerik"
+msgstr ""
+
+#: .\seotr\models.py:184
+msgid "TR Blog İçerikleri"
+msgstr ""
+
+#: .\seotr\models.py:195 .\seotr\models.py:196
+msgid "TR İletişim Sayfası"
+msgstr ""
+
+#: .\seotr\models.py:205
+msgid "KVKK Metni"
+msgstr ""
+
+#: .\seotr\models.py:208 .\seotr\models.py:209
+msgid "TR KVKK Aydınlatma Metni"
+msgstr ""

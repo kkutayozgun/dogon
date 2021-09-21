@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+
+{% block revolution-slider-css %}
+    {% include 'components/revolution-css.html' %}
+{% endblock revolution-slider-css %}
+
+{% block revolution-slider-js %}
+    {% include 'components/revolution-js.html' %}
+{% endblock revolution-slider-js %}
+
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=home %}
+{% endblock meta-settings %}
+    
+    
+
+{% block content %}
+    
+    {% include 'home/components/carousel.html' %}
+
+    {% include 'home/components/offer-area.html' %}
+
+    {% include 'home/components/application-areas.html' %}
+
+    {% include 'home/components/prototype-area.html' %}
+
+    {% include 'home/components/blog-area.html' %}
+
+    {% include 'components/meet-area.html' %}
+
+
+{% endblock content %}

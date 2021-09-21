@@ -1,0 +1,86 @@
+{% load i18n %}
+
+<!--================================
+       START FOOTER AREA
+=================================-->
+<section class="footer-area responsive-content theme-bg-dark">
+    <div class="footer-fluid">
+        <div class="container">
+            <div class="row footer-list">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-shared rpd-content">
+                        <div class="footer__title">
+                            <h3 class="footer__title-title">{% trans 'Bize Ulaşın' %}</h3>
+                        </div><!-- end footer__title -->
+                        <div class="ftp__links">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fas fa-phone-square"></i> +90 (212) 855 82 20</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@dogon.com.tr"><i class="fas fa-envelope"></i>
+                                        info@dogon.com.tr</a>
+                                </li>
+                                <li>
+                                    <p class="add__para-desc"><i class="fas fa-map"></i> Kavaklı, İstanbul Cd. No:21, 34520 Beylikdüzü Osb/Beylikdüzü/İstanbul</p>
+                                </li>
+                            </ul>
+                        </div><!-- end ftp__links -->
+                    </div><!-- end footer-shared -->
+                </div><!-- end col-md-3 -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="footer-shared">
+                        <div class="footer__title">
+                            <h3 class="footer__title-title">{% trans 'Site Haritası' %}</h3>
+                        </div><!-- end footer__title -->
+                        <div class="ftp__links menu__links clearfix">
+                            <ul class="ftp__menu-links pull-left">
+                                <li><a href="{% url 'home' %}">{% trans 'Ana Sayfa' %}</a></li>
+                                <li><a href="{% url 'about' %}">{% trans 'Hakkımızda' %}</a></li>
+                                <li><a href="{% url 'applications' %}">{% trans 'Uygulamalar' %}</a></li>
+                                <li><a href="{% url 'quality' %}">{% trans 'Kalite' %}</a></li>
+                                <li><a href="{% url 'blog' %}">{% trans 'Blog' %}</a></li>
+                                
+                            </ul>
+                            <ul class="ftp__menu-links ftp__menu--links pull-left">
+                                <li><a href="{% url 'contact' %}">{% trans 'İletişim' %}</a></li>
+                                <li><a href="{% url 'kvkk_page' %}">{% trans 'KVKK' %}</a></li>
+                      
+                            </ul>
+                        </div><!-- end ftp__links -->
+                    </div><!-- end footer-shared -->
+                </div><!-- end col-md-4 -->
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="footer-shared">
+                        <div class="footer__title">
+                            <h3 class="footer__title-title">{% trans 'Haritada DOGON' %}</h3>
+                        </div><!-- end footer__title -->
+                        <div class="ftp__links">
+                            <div id="mainMap" class="mt-30px addressMap"></div>
+                        </div><!-- end ftp__links -->
+                    </div><!-- end footer-shared -->
+                </div><!-- end col-md-5 -->
+            </div><!-- end row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-shared">
+                        <div class="col-md-8 no-padding-lr">
+                            <p class="copy__desc">Site by Black Cap Media</p>
+                        </div><!-- end col-md-8 -->
+                        <div class="col-md-4 text-right no-padding-lr">
+                            <ul class="copy__links">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div><!-- end col-md-4 -->
+                    </div><!-- end copyright-shared -->
+                </div><!-- end col-md-12 -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end footer-fluid -->
+</section><!-- end footer-area -->
+<!--================================
+       END FOOTER AREA
+=================================-->

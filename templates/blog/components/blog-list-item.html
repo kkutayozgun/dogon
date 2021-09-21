@@ -1,0 +1,32 @@
+{% load i18n %}
+
+<div class="col-md-6">
+    <div class="shared-service">
+        <div class="shared__img">
+            <img src="{{blogpost.image.url}}" alt="{{blogpost.title}}">
+            <div class="shared__date-item">
+                <span>{{blogpost.created_at|date:'j'}}</span>
+                <span>{{blogpost.created_at|date:'M'}}</span>
+            </div>
+        </div><!-- end shared-__img -->
+        <div class="shared-content">
+            <div class="service__title mb-30px">
+                <h3 class="service__title-title">
+                    <a href="single-blog.html">
+                        {{blogpost.title}}
+                    </a>
+                </h3>
+            </div><!-- end service__title -->
+            <div class="service__desc mb-35px">
+                <p class="service__desc-desc">
+                   {{blogpost.body|safe|truncatewords_html:'10'}}
+                </p>
+            </div><!-- end service__desc -->
+            <div class="service__more">
+                <a href="{% url 'blog_content' slug=blogpost.slug %}" class="service__more-btn">
+                    {% trans 'Devamını oku' %} <span class="fontello icon-angle-double-right"></span>
+                </a>
+            </div><!-- end service__desc -->
+        </div><!-- end shared-content -->
+    </div><!-- end shared-service -->
+</div><!-- end col-md-4 -->

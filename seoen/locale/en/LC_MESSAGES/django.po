@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-19 19:35+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\seoen\models.py:8
+msgid "Anahtar Kelime"
+msgstr ""
+
+#: .\seoen\models.py:11
+msgid "EN Anahtar Kelime"
+msgstr ""
+
+#: .\seoen\models.py:12
+msgid "EN Anahtar Kelimeler"
+msgstr ""
+
+#: .\seoen\models.py:18
+msgid "SEO Başlığı:"
+msgstr ""
+
+#: .\seoen\models.py:19
+msgid "Meta Açıklaması:"
+msgstr ""
+
+#: .\seoen\models.py:20
+msgid "Anahtar Kelimeler"
+msgstr ""
+
+#: .\seoen\models.py:28 .\seoen\models.py:29
+msgid "EN SEO Anasayfa"
+msgstr ""
+
+#: .\seoen\models.py:35
+msgid "Slider Başlığı (1.Satır):"
+msgstr ""
+
+#: .\seoen\models.py:36
+msgid "Slider Başlığı (2.Satır):"
+msgstr ""
+
+#: .\seoen\models.py:37
+msgid "Slider İçeriği:"
+msgstr ""
+
+#: .\seoen\models.py:38
+msgid "SSlider Yönlendirme Linki:"
+msgstr ""
+
+#: .\seoen\models.py:39
+msgid "Slider Görseli:"
+msgstr ""
+
+#: .\seoen\models.py:42
+msgid "EN Slider İçeriği"
+msgstr ""
+
+#: .\seoen\models.py:43
+msgid "EN Slider İçerikleri"
+msgstr ""
+
+#: .\seoen\models.py:50 .\seoen\models.py:70 .\seoen\models.py:83
+#: .\seoen\models.py:96 .\seoen\models.py:118 .\seoen\models.py:135
+#: .\seoen\models.py:150 .\seoen\models.py:161 .\seoen\models.py:180
+#: .\seoen\models.py:192
+msgid "Banner Başlık:"
+msgstr ""
+
+#: .\seoen\models.py:51 .\seoen\models.py:136 .\seoen\models.py:181
+#: .\seoen\models.py:193
+msgid "Banner Görseli:"
+msgstr ""
+
+#: .\seoen\models.py:53
+msgid "Açıklama Başlığı"
+msgstr ""
+
+#: .\seoen\models.py:54
+msgid "Açıklama İçeriği:"
+msgstr ""
+
+#: .\seoen\models.py:55
+msgid "Açıklama Görseli:"
+msgstr ""
+
+#: .\seoen\models.py:57
+msgid "Alt Açıklama Başlığı:"
+msgstr ""
+
+#: .\seoen\models.py:58
+msgid "Alt Açıklama İçeriği:"
+msgstr ""
+
+#: .\seoen\models.py:59
+msgid "Alt Açıklama Görseli:"
+msgstr ""
+
+#: .\seoen\models.py:62 .\seoen\models.py:63
+msgid "EN Hakkımızda Sayfası"
+msgstr ""
+
+#: .\seoen\models.py:71 .\seoen\models.py:122
+msgid "Banner Resmi:"
+msgstr ""
+
+#: .\seoen\models.py:74 .\seoen\models.py:75
+msgid "TR Uygulamalar SEO"
+msgstr ""
+
+#: .\seoen\models.py:82 .\seoen\models.py:98
+msgid "Başlık:"
+msgstr ""
+
+#: .\seoen\models.py:84
+msgid "Banner Resim:"
+msgstr ""
+
+#: .\seoen\models.py:86 .\seoen\models.py:104 .\seoen\models.py:148
+#: .\seoen\models.py:163
+msgid "URL Uzantısı:"
+msgstr ""
+
+#: .\seoen\models.py:89
+msgid "TR Uygulama Kategori"
+msgstr ""
+
+#: .\seoen\models.py:90
+msgid "TR Uygulama Kategorileri"
+msgstr ""
+
+#: .\seoen\models.py:99
+msgid "Açıklama:"
+msgstr ""
+
+#: .\seoen\models.py:100
+msgid "Kapak Resmi:"
+msgstr ""
+
+#: .\seoen\models.py:105 .\seoen\models.py:124
+msgid "İçerik Resmi:"
+msgstr ""
+
+#: .\seoen\models.py:107
+msgid "Broşür Dosyası"
+msgstr ""
+
+#: .\seoen\models.py:110
+msgid "EN Uygulama Alt Kategorisi"
+msgstr ""
+
+#: .\seoen\models.py:111
+msgid "EN Uygulama Alt Kategorileri"
+msgstr ""
+
+#: .\seoen\models.py:120
+msgid "İçerik Başlığı"
+msgstr ""
+
+#: .\seoen\models.py:121
+msgid "Kalite İçeriği:"
+msgstr ""
+
+#: .\seoen\models.py:127 .\seoen\models.py:128
+msgid "EN Kalite Sayfası"
+msgstr ""
+
+#: .\seoen\models.py:139 .\seoen\models.py:140
+msgid "EN Blog Sayfası SEO"
+msgstr ""
+
+#: .\seoen\models.py:147
+msgid "Blog Kategori:"
+msgstr ""
+
+#: .\seoen\models.py:153
+msgid "EN Blog Kategori"
+msgstr ""
+
+#: .\seoen\models.py:154
+msgid "EN Blog Kategoriler"
+msgstr ""
+
+#: .\seoen\models.py:160
+msgid "Blog Kategori"
+msgstr ""
+
+#: .\seoen\models.py:162
+msgid "İçerik Başlık:"
+msgstr ""
+
+#: .\seoen\models.py:165
+msgid "Blog İçeriği:"
+msgstr ""
+
+#: .\seoen\models.py:166
+msgid "Blog Görseli:"
+msgstr ""
+
+#: .\seoen\models.py:168
+msgid "Eklenme Zamanı"
+msgstr ""
+
+#: .\seoen\models.py:169
+msgid "Güncellenme Zamanı"
+msgstr ""
+
+#: .\seoen\models.py:172
+msgid "TR Blog İçerik"
+msgstr ""
+
+#: .\seoen\models.py:173
+msgid "TR Blog İçerikleri"
+msgstr ""
+
+#: .\seoen\models.py:184 .\seoen\models.py:185
+msgid "EN İletişim Sayfası"
+msgstr ""
+
+#: .\seoen\models.py:195
+msgid "KVKK Metni"
+msgstr ""
+
+#: .\seoen\models.py:198 .\seoen\models.py:199
+msgid "EN KVKK Aydınlatma Metni"
+msgstr ""

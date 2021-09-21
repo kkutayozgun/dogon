@@ -1,0 +1,151 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+{% block custom-css %}
+    <style>
+        .trusted-area{
+            background-image: url("{{about.banner_image.url}}");
+        }
+        .think-area .think-column-box .boxed-bg-3, .think-area .think-column-box .boxed-bg-4{
+            background-image: url("{{about.image1.url}}")
+        }
+        .offer--area .offer-content .offer-quote {
+            background-image: url("{{about.image2.url}}")
+        }
+    </style>
+{% endblock custom-css %}
+
+
+{% block meta-settings %}
+    {% include 'components/meta.html' with obj=about %}
+{% endblock meta-settings %}
+    
+    
+
+{% block content %}
+    
+    <!--================================
+            START BANNER AREA
+    =================================-->
+    <section class="trusted-area breadcrumb-area text-center">
+        <div class="trusted-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="trusted-content">
+                            <div class="trusted__title">
+                                <h2 class="trusted__title-title">{{about.banner}}</h2>
+                            </div><!-- end trusted__title -->
+                        </div><!-- end trusted-content -->
+                    </div><!-- end col-md-12 -->
+                </div><!-- end row -->
+            </div><!-- container -->
+        </div><!-- end trusted-fluid -->
+    </section><!-- end trusted-area -->
+    <!--================================
+            END BANNER AREA
+    =================================-->    
+
+    <!--================================
+            START THINK AREA
+    =================================-->
+    <section class="think-area responsive-content area-padding">
+        <div class="think-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="avivon-heading">
+                            <h2 class="avivon__title">
+                                {{about.title1}}
+                            </h2>
+                            <div class="avivon__desc offer-title2 mt-40px mb-35px">
+                                {{about.body1|safe}}
+                            </div>
+                            
+                            <a href="#" class="avivon__btn">
+                                get started <span class="fontello icon-angle-double-right"></span>
+                            </a>
+                        </div><!-- end avivon-heading -->
+                    </div><!-- end col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="think-column-box think-column-box2 clearfix">
+                            <div class="think-boxed think--boxed boxed-bg-3"></div><!-- end think-boxed -->
+                            <div class="think-boxed think--boxed boxed-bg-4"></div><!-- end think-boxed -->
+                        </div><!-- end think-column -->
+                    </div><!-- end col-md-6 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end think-fluid -->
+    </section><!-- end think-area -->
+    <!--================================
+            END THINK AREA
+    =================================-->
+
+<!--================================
+         START OFFER AREA
+=================================-->
+<section class="offer-area responsive-content offer--area theme-bg-gray">
+    <div class="offer-fluid">
+        <div class="container-fluid">
+            <div class="row offer-content">
+                <div class="col-md-6 col-sm-6 col-xs-12 no-padding-lr">
+                    <div class="offer-quote"></div><!-- end offer-quote -->
+                </div><!-- end col-md-6 -->
+                <div class="col-md-6 col-sm-6 col-xs-12 offer-list-box">
+                    <div class="offer-list">
+                        <div class="avivon-heading focus-title mb-80px">
+                            <h2 class="avivon__title">
+                                {{about.title2}}
+                            </h2>
+                        </div><!-- end avivon-heading -->
+                        <div class="offer-item">
+                            <div class="same-offer">
+                                <div class="offer__title">
+                                    <p class="offer__desc mt-30px mb-40px">
+                                        {{about.body2|safe}}
+                                    </p>
+                                </div><!-- end offer__title -->
+                            </div><!-- end same-offer -->
+                        </div><!-- end offer-item -->
+                    </div><!-- end offer-list -->
+                </div><!-- end col-md-6 -->
+            </div><!-- end row -->
+        </div><!-- container-fluid -->
+    </div><!-- end offer-fluid -->
+</section><!-- end offer-area -->
+<!--================================
+          END OFFER AREA
+=================================-->
+
+<!--================================
+       START CLIENT LOGO AREA
+=================================-->
+<section class="client-logo-area area-padding text-center">
+    <div class="client-logo-fluid">
+        <div class="container">
+            <div class="row client-logo-box">
+                <div class="col-md-12">
+                    <div class="client-logo">
+                        
+                        {% for reference in references %}
+                        <div class="client-logo-item">
+                            <img class="client__logo-brand" src="{{reference.image.url}}" alt="{{reference.company}}">
+                        </div>
+                        {% endfor %}
+                            
+                        
+                    </div><!-- end client-logo -->
+                </div><!-- end col-md-12 -->
+            </div><!-- end row -->
+        </div><!-- container -->
+    </div><!-- end client-logo-fluid -->
+</section><!-- end client-logo-area -->
+<!--================================
+          END CLIENT LOGO AREA
+=================================-->
+
+{% include 'components/meet-area.html' %}
+
+
+{% endblock content %}
