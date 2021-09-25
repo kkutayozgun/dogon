@@ -20,7 +20,9 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="shared-service">
                         <div class="shared__img">
-                            <img src="{{post.image.url}}" alt="{{blog.title}}">
+                            <a href="{% url 'blog_content' slug=post.slug %}">
+                                <img src="{{post.image.url}}" alt="{{blog.title}}">
+                            </a>
                
                         </div><!-- end shared-__img -->
                         <div class="shared-content">

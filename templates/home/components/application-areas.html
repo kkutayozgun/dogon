@@ -27,7 +27,9 @@
                                     </a>
                                 </h3>
                             </div><!-- end office__name -->
-                            <div class="recent__img recent__bg" style="background-image: url('{{application.cover_image.url}}"></div>
+                            <a href="{% url 'application_detail' slug=application.slug %}">
+                                <div class="recent__img recent__bg" style="background-image: url('{{application.cover_image.url}}"></div>
+                            </a>
                             <div class="recent__btn">
                                 <a href="{% url 'application_detail' slug=application.slug %}" class="recent__btn-btn">
                                     {% trans 'Detaylı bilgi' %}

@@ -3,13 +3,12 @@
 <div class="col-md-3 col-sm-6 col-xs-12 masonary-item">
     <div class="case-list">
         <div class="office-list-item">
-            <div class="office__name">
+            <div class="office__name" style="padding-bottom: 0;">
                 <span class="office__desc-top">{{item.category.title}}</span>
                 <h3 class="office__name-title">
-                    <a href="single-cases.html">{{item.title}}</a>
+                    <a href="{% url 'application_detail' slug=item.slug %}">{{item.title}}</a>
                 </h3>
             </div><!-- end office__name -->
-            
             <div class="recent__img recent__bg" style="background-image: url('{{item.cover_image.url}}');"></div>
             <div class="recent__btn">
                 <a href="{% url 'application_detail' slug=item.slug %}" class="recent__btn-btn">
