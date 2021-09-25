@@ -2,10 +2,12 @@
 {% load static %}
 
 {% block custom-css %}
+    <link rel="stylesheet" href="{% static 'css/contactpage.css' %}">
     <style>
         .breadcrumb-area {
             background-image: url("{{contact.banner_image.url}}")
         }
+
     </style>
 {% endblock custom-css %}
 
