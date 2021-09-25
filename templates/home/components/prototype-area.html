@@ -1,4 +1,6 @@
 {% load i18n %}
+{% load static %}
+
 <!--================================
           START THINK AREA
 =================================-->
@@ -18,7 +20,8 @@
                         </p>
                     </div>
                     <!-- end avivon-heading -->
-                    <div class="think-img">
+                    {% static '/images/prototype_3.jpg' as prototype3_img %}
+                    <div class="think-img" style="background-image: url('{{prototype3_img}}');">
                         <div class="think__bg"></div>
                     </div>
                     <!-- end think-img -->
@@ -34,9 +37,11 @@
                             </a>
                         </div>
                         <!-- end think-boxed -->
-                        <div class="think-boxed boxed-bg rpl-content-2"></div>
+                        {% static '/images/prototype_1.jpg' as prototype1_img %}
+                        <div class="think-boxed boxed-bg rpl-content-2" style="background-image: url('{{prototype1_img}}');"></div>
                         <!-- end think-boxed -->
-                        <div class="think-boxed rpl-content boxed-bg-2"></div>
+                        {% static '/images/prototype_2.jpg' as prototype2_img %}
+                        <div class="think-boxed rpl-content boxed-bg-2" style="background-image: url('{{prototype2_img}}');"></div>
                         <!-- end think-boxed -->
                         <div class="think-boxed rpl-content-2">
                             <h3 class="boxed__title">{% trans 'Tasarım Yolculuğu ' %}</h3>

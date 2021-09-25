@@ -1,4 +1,5 @@
 {% extends 'base/base.html' %}
+{% load i18n %}
 
 {% block custom-css %}
     <style>
@@ -16,27 +17,14 @@
 
 {% block content %}
     
-<!--================================
-          START BANNER AREA
-=================================-->
-<section class="trusted-area breadcrumb-area text-center">
-    <div class="trusted-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="trusted-content">
-                        <div class="trusted__title">
-                            <h2 class="trusted__title-title">{{application.banner_title}}</h2>
-                        </div><!-- end trusted__title -->
-                    </div><!-- end trusted-content -->
-                </div><!-- end col-md-12 -->
-            </div><!-- end row -->
-        </div><!-- container -->
-    </div><!-- end trusted-fluid -->
-</section><!-- end trusted-area -->
-<!--================================
-          END BANNER AREA
-=================================-->
+
+{% if category %}
+    {% include 'components/banner-area.html' with banner_title=category.banner_title %}
+{% else %}
+    {% trans 'Uygulamalar' as uygulamalar %}
+    {% include 'components/banner-area.html' with banner_title=uygulamalar %}
+{% endif %}
+    
 
 <!--================================
           START RECENT AREA

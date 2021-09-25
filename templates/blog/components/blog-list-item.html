@@ -3,16 +3,15 @@
 <div class="col-md-6">
     <div class="shared-service">
         <div class="shared__img">
-            <img src="{{blogpost.image.url}}" alt="{{blogpost.title}}">
-            <div class="shared__date-item">
-                <span>{{blogpost.created_at|date:'j'}}</span>
-                <span>{{blogpost.created_at|date:'M'}}</span>
-            </div>
+            <a href="{% url 'blog_content' slug=blogpost.slug %}">
+                <img src="{{blogpost.image.url}}" alt="{{blogpost.title}}">
+            </a>
+     
         </div><!-- end shared-__img -->
         <div class="shared-content">
             <div class="service__title mb-30px">
                 <h3 class="service__title-title">
-                    <a href="single-blog.html">
+                    <a href="{% url 'blog_content' slug=blogpost.slug %}">
                         {{blogpost.title}}
                     </a>
                 </h3>

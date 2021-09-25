@@ -1,15 +1,19 @@
 {% extends 'base/base.html' %}
 {% load static %}
-
+{% load i18n %}
 
 {% block custom-css %}
     <style>
         .trusted-area{
             background-image: url("{{about.banner_image.url}}");
         }
-        .think-area .think-column-box .boxed-bg-3, .think-area .think-column-box .boxed-bg-4{
+        .think-area .think-column-box .boxed-bg-3 {
             background-image: url("{{about.image1.url}}")
         }
+        .think-area .think-column-box .think--boxed{
+            width:100%;
+        }
+ 
         .offer--area .offer-content .offer-quote {
             background-image: url("{{about.image2.url}}")
         }
@@ -63,15 +67,11 @@
                                 {{about.body1|safe}}
                             </div>
                             
-                            <a href="#" class="avivon__btn">
-                                get started <span class="fontello icon-angle-double-right"></span>
-                            </a>
                         </div><!-- end avivon-heading -->
                     </div><!-- end col-md-6 -->
                     <div class="col-md-6">
                         <div class="think-column-box think-column-box2 clearfix">
                             <div class="think-boxed think--boxed boxed-bg-3"></div><!-- end think-boxed -->
-                            <div class="think-boxed think--boxed boxed-bg-4"></div><!-- end think-boxed -->
                         </div><!-- end think-column -->
                     </div><!-- end col-md-6 -->
                 </div><!-- end row -->
@@ -124,6 +124,7 @@
 <section class="client-logo-area area-padding text-center">
     <div class="client-logo-fluid">
         <div class="container">
+            <h2 class="avivon__title">{% trans 'Referanslarımız' %}</h2>
             <div class="row client-logo-box">
                 <div class="col-md-12">
                     <div class="client-logo">

@@ -28,7 +28,6 @@
         {% include 'base/components/styles.html' %}
     {% endblock  %}
 
-    
     {% block custom-css %}
         
     {% endblock custom-css %}
@@ -37,7 +36,6 @@
 </head>
 <body>
 
-    {% include 'base/components/page-loader.html' %}
 
     {% include 'components/mobile-sidebar.html' %}
 
@@ -69,7 +67,7 @@
     <script src="{% static 'js/gmaps.js' %}"></script>
     <script>
         // google map control
-        var map;
+        var mainMap;
         $(document).ready(function(){
             map = new GMaps({
                 el: '#mainMap',

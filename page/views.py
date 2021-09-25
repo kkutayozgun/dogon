@@ -60,6 +60,7 @@ def application_category_list(request, slug):
     context = {
         'application': application_model.objects.all().first(),
         'subcategories': subcategories_model.objects.filter(category=category),
+        'category': category,
     }
     return render(request, template_name, context)
 

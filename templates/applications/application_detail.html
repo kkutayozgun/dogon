@@ -10,6 +10,15 @@
             background-image: none;
         }
         .btn-kesfet {
+            background-color: white;
+            padding: 14px 28px;
+            font-weight: bold;
+            color: #ff7e00;
+            border-radius: 8px;
+            border: 2px solid white;
+        }
+        .btn-kesfet:hover{
+            background-color:#ff7e00;
             color: white;
         }
     </style>
@@ -33,7 +42,8 @@
                 <div class="col-md-8">
                     <div class="single-content">
                         <div class="avivon-heading">
-                            <h2 class="avivon__title">{{subcategory.title}}</h2>
+                            <h2 class="avivon__title" style="margin-bottom: 2rem;">{{subcategory.title}}</h2>
+      
                         </div><!-- end avivon-heading -->
                         <div class="single__img mb-50px">
                             {% if subcategory.image %}
@@ -71,7 +81,9 @@
                                     {% endblocktrans %}
                                     
                                 </p>
-                                <a href="{% url 'applications' %}" class="btn-kesfet">{% trans 'Keşfet' %}</a>
+                                <a href="{% url 'applications' %}" class="btn-kesfet">
+                                    {% trans 'Keşfet' %} 
+                                </a>
                             </div><!-- end avivon__help-center -->
                         </div><!-- end side__shared -->
                         <div class="download__btn">
