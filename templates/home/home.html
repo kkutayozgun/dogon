@@ -17,6 +17,12 @@
 {% endblock meta-settings %}
 
 
+{% block custom-css %}
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+{% endblock custom-css %}
+    
+
+
 {% block content %}
     
     {% include 'home/components/carousel.html' %}

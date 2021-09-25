@@ -1,0 +1,30 @@
+.btn_home_detail{
+    color: #222232;
+    border: 2px solid #222232;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    padding: 14px 28px;
+    margin-top: 14px;
+    white-space: nowrap;
+    font-size: 16px;
+    position: relative;
+    
+}
+.btn_home_detail span{
+    padding-left: 12px;
+} 
+.btn_home_detail span::before{
+    font-size: 16px;
+}
+
+.btn_home_detail:hover {
+    background-color: #ff7e00;
+    border-color: #ff7e00;
+    color: #fff;
+}
+.home_offer_image{
+    height: 424px;
+}

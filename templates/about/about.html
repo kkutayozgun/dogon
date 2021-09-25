@@ -17,6 +17,9 @@
         .offer--area .offer-content .offer-quote {
             background-image: url("{{about.image2.url}}")
         }
+        .avivon-heading .avivon__title{
+            margin-bottom: 3rem;
+        }
     </style>
 {% endblock custom-css %}
 
@@ -124,21 +127,26 @@
 <section class="client-logo-area area-padding text-center">
     <div class="client-logo-fluid">
         <div class="container">
-            <h2 class="avivon__title">{% trans 'Referanslarımız' %}</h2>
-            <div class="row client-logo-box">
-                <div class="col-md-12">
-                    <div class="client-logo">
-                        
-                        {% for reference in references %}
-                        <div class="client-logo-item">
-                            <img class="client__logo-brand" src="{{reference.image.url}}" alt="{{reference.company}}">
-                        </div>
-                        {% endfor %}
+            <div class="avivon-heading">
+                <h2 class="avivon__title mb-5">{% trans 'Referanslarımız' %}</h2>
+                <br>
+                <div class="row client-logo-box">
+                    <div class="col-md-12">
+                        <div class="client-logo">
                             
-                        
-                    </div><!-- end client-logo -->
-                </div><!-- end col-md-12 -->
-            </div><!-- end row -->
+                            {% for reference in references %}
+                            <div class="client-logo-item">
+                                <a href="{{reference.url}}" target="_blank">
+                                    <img class="client__logo-brand" src="{{reference.image.url}}" alt="{{reference.company}}">
+                                </a>
+                            </div>
+                            {% endfor %}
+                            
+                            
+                        </div><!-- end client-logo -->
+                    </div><!-- end col-md-12 -->
+                </div><!-- end row -->
+            </div>
         </div><!-- container -->
     </div><!-- end client-logo-fluid -->
 </section><!-- end client-logo-area -->

@@ -49,12 +49,12 @@ $(document).on('ready', function () {
 
     // start office-list owl-carousel control
     $('.office-list').owlCarousel({
-        loop: true,
+        loop: false,
         items: 4,
         nav: false,
-        dots: true,
+        dots: false,
         smartSpeed: 500,
-        autoplay: true,
+        autoplay: false,
         margin: 10,
         responsive:{
             320:{
@@ -137,12 +137,12 @@ $(document).on('ready', function () {
     // start client-logo owl-carousel control
     $('.client-logo').owlCarousel({
         loop: true,
-        items: 5,
+        items: 4,
         nav: false,
         dots: false,
         smartSpeed: 500,
         autoplay: true,
-        margin: 60,
+        margin: 50,
         responsive:{
             320:{
                 items:2,
@@ -158,19 +158,19 @@ $(document).on('ready', function () {
                 items:3,
             },
             1000:{
-                items:5,
+                items:4,
             },
             1920:{
-                items:5,
+                items:4,
             },
             1440:{
-                items:5,
+                items:4,
             },
             1366:{
-                items:5,
+                items:4,
             },
             1280:{
-                items:5,
+                items:4,
             }
         }
     });

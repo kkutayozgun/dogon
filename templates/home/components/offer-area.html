@@ -1,18 +1,16 @@
 {% load static %} 
 {% load i18n %}
 
-<!--================================
-      START OFFER AREA
-=================================-->
-<section class="offer-area responsive-content inspire-area area-padding">
-    <div class="offer-fluid">
-        <div class="container">
-            <div class="row offer-content">
-                <div class="inspire-list-box">
-                    <div class="inspire-img mb-30px"></div>
-                </div>
-                <div class="offer-list-box">
-                    <div class="offer-list">
+
+<section class="offer-area area-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-responsive home_offer_image" src="{% static 'images/home-about.jpg' %}" alt="DOGON About">
+            </div>
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-body">
                         <div class="avivon-heading">
                             <h2 class="avivon__title inspire-title">
                                 {% blocktrans trimmed %} Hayal gücüne yolculuk başlıyor! {% endblocktrans %}
@@ -25,24 +23,15 @@
                                 çözümler sunmaktadır. 
                                 {% endblocktrans %}
                             </p>
-                            <a href="{% url 'about' %}" class="get__btn">
+                            <a href="{% url 'about' %}" class="btn_home_detail">
                                 {% trans 'Detaylı bilgi' %} 
                                 <span class="fontello icon-angle-double-right"></span>
                             </a>
                         </div>
-                        <!-- end avivon-heading -->
                     </div>
-                    <!-- end offer-list -->
                 </div>
-                <!-- end offer-list-box -->
             </div>
-            <!-- end row -->
+
         </div>
-        <!-- container-fluid -->
     </div>
-    <!-- end offer-fluid -->
 </section>
-<!-- end offer-area -->
-<!--================================
-         END OFFER AREA
- =================================-->

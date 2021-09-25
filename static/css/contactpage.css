@@ -1,0 +1,21 @@
+.office-list-item{
+    padding: 45px 33px;     
+    border-radius: 5px;
+    transition: all 0.3s;   
+}
+
+.office-list-item .office__name {
+    margin-bottom: 30px;
+}
+.office-list-item .office__name .office__name-title {
+    font-size: 20px;
+    color: #222232;
+    font-weight: 700;
+    margin: 0;
+}
+.office-list-item .office__desc .office__desc-desc {
+    font-size: 16px;
+    color: #7c7c82;
+    line-height: 30px;
+    font-weight: 600;
+}
