@@ -28,6 +28,12 @@
         {% include 'base/components/styles.html' %}
     {% endblock  %}
 
+    
+    {% block map-css %}
+        <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    {% endblock map-css %}
+        
+
     {% block custom-css %}
         
     {% endblock custom-css %}
@@ -63,7 +69,7 @@
     
     {% block map-scripts %}
         
-    <script src="//maps.google.com/maps/api/js?v=quarterly&language=en&key=AIzaSyDvwYEsIXbjzlpUz05eDPFqDVdOr6mZwV8&libraries=geometry%2Cplaces%2Cvisualization&"></script>
+    <!-- <script src="//maps.google.com/maps/api/js?v=quarterly&language=en&key=AIzaSyDvwYEsIXbjzlpUz05eDPFqDVdOr6mZwV8&libraries=geometry%2Cplaces%2Cvisualization&"></script>
     <script src="{% static 'js/gmaps.js' %}"></script>
     <script>
         // google map control
@@ -79,8 +85,47 @@
             });
         });
 
-    </script>
+    </script> -->
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key={{GOOGLE_API_KEY}}&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+    <script async>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const position = { lat: 40.98441181226653, lng: 28.63638226915975 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("footerMap"), {
+            zoom: 15,
+            center: position,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: position,
+            map: map,
+          });
+
+          const map2 = new google.maps.Map(document.getElementById("contactMap"), {
+            zoom: 15,
+            center: position,
+          });
+          // The marker, positioned at Uluru
+          const marker2 = new google.maps.Marker({
+            position: position,
+            map: map2,
+          });
+        }
+      </script>
     {% endblock map-scripts %}
+
+    
+    {% block extra-map-scripts %}
+        
+    {% endblock extra-map-scripts %}
+        
         
 
     
