@@ -17,27 +17,8 @@
                 <div class="col-md-12">
                     <div class="office-list">
                         
-                        {% for application in applications %}
-                        <div class="office-list-item">
-                            <div class="office__name">
-                                <span class="office__desc-top">{{application.category.title}}</span>
-                                <h3 class="office__name-title">
-                                    <a href="{% url 'application_detail' slug=application.slug %}">
-                                        {{application.title}}
-                                    </a>
-                                </h3>
-                            </div><!-- end office__name -->
-                            <a href="{% url 'application_detail' slug=application.slug %}">
-                                <div class="recent__img recent__bg" style="background-image: url('{{application.cover_image.url}}"></div>
-                            </a>
-                            <div class="recent__btn">
-                                <a href="{% url 'application_detail' slug=application.slug %}" class="recent__btn-btn">
-                                    {% trans 'Detaylı bilgi' %}
-                                    <span class="fontello icon-angle-double-right"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- end office-list-item -->
+                        {% for item in applications %}
+                        {% include 'applications/components/category-list-item.html' %}
                         {% endfor %}
                     </div><!-- end office-list -->
                 </div><!-- end col-md-12 -->

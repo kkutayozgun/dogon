@@ -6,8 +6,8 @@ class KeywordsTr(models.Model):
     keyword = models.CharField(_('Anahtar Kelime'), max_length=100)
 
     class Meta:
-        verbose_name = _('EN Anahtar Kelime')
-        verbose_name_plural = _('EN Anahtar Kelimeler')
+        verbose_name = _('TR Anahtar Kelime')
+        verbose_name_plural = _('TR Anahtar Kelimeler')
 
     def __str__(self):
         return self.keyword

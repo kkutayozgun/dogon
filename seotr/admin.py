@@ -19,6 +19,8 @@ from seotr.models import (
 
 SEO_FIELDS = ('seo_title', 'meta_description', 'meta_keywords')
 
+admin.site.site_header = 'DOGON'
+
 admin.site.register(KeywordsTr)
 
 
