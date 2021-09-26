@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-25 18:50+0300\n"
+"POT-Creation-Date: 2021-09-26 23:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,7 +119,7 @@ msgid "Banner Resmi:"
 msgstr ""
 
 #: .\seoen\models.py:74 .\seoen\models.py:75
-msgid "TR Uygulamalar SEO"
+msgid "EN Uygulamalar SEO"
 msgstr ""
 
 #: .\seoen\models.py:82 .\seoen\models.py:98
@@ -136,11 +136,11 @@ msgid "URL Uzantısı:"
 msgstr ""
 
 #: .\seoen\models.py:89
-msgid "TR Uygulama Kategori"
+msgid "EN Uygulama Kategori"
 msgstr ""
 
 #: .\seoen\models.py:90
-msgid "TR Uygulama Kategorileri"
+msgid "EN Uygulama Kategorileri"
 msgstr ""
 
 #: .\seoen\models.py:99
@@ -220,11 +220,11 @@ msgid "Güncellenme Zamanı"
 msgstr ""
 
 #: .\seoen\models.py:172
-msgid "TR Blog İçerik"
+msgid "EN Blog İçerik"
 msgstr ""
 
 #: .\seoen\models.py:173
-msgid "TR Blog İçerikleri"
+msgid "EN Blog İçerikleri"
 msgstr ""
 
 #: .\seoen\models.py:184 .\seoen\models.py:185
