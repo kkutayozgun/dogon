@@ -71,8 +71,8 @@ class ApplicationEn(SeoAbstractModel):
     banner_image = models.ImageField(_('Banner Resmi:'), upload_to='applications/banner')
 
     class Meta:
-        verbose_name = _('TR Uygulamalar SEO')
-        verbose_name_plural = _('TR Uygulamalar SEO')
+        verbose_name = _('EN Uygulamalar SEO')
+        verbose_name_plural = _('EN Uygulamalar SEO')
 
     def __str__(self):
         return self.banner_title
@@ -86,8 +86,8 @@ class ApplicationCategoryEn(SeoAbstractModel):
     slug = models.SlugField(_('URL Uzantısı:'), max_length=200)
 
     class Meta:
-        verbose_name = _('TR Uygulama Kategori')
-        verbose_name_plural = _('TR Uygulama Kategorileri')
+        verbose_name = _('EN Uygulama Kategori')
+        verbose_name_plural = _('EN Uygulama Kategorileri')
 
     def __str__(self):
         return self.title
@@ -169,8 +169,8 @@ class BlogContentEn(SeoAbstractModel):
     updated_at = models.DateTimeField(auto_now=True, verbose_name=_('Güncellenme Zamanı'))
     
     class Meta:
-        verbose_name = _('TR Blog İçerik')
-        verbose_name_plural = _('TR Blog İçerikleri')
+        verbose_name = _('EN Blog İçerik')
+        verbose_name_plural = _('EN Blog İçerikleri')
 
     def __str__(self):
         return self.title

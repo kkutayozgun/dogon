@@ -75,7 +75,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'page.context_processors.categories_processor',
-                'page.context_processors.googleapikey_processor',
             ],
         },
     },
@@ -124,5 +123,3 @@ LANGUAGES = (
 LANGUAGE_SESSION_KEY = 'language'
 
 ADMIN_URL = env('ADMIN_URL', default="admin/")
-
-GOOGLE_API_KEY = env('GOOGLE_API_KEY', default='')
